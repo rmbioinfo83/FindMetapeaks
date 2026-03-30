@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "FindMetapeaks"
+version = "0.1.0"
+description = "Minimal installable package skeleton for the bdgFindMetapeaks command"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  { name = "OpenAI ChatGPT" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+bdgFindMetapeaks = "findmetapeaks.bdgFindMetapeaks:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,66 @@
+Metadata-Version: 2.4
+Name: FindMetapeaks
+Version: 0.1.0
+Summary: Minimal installable package skeleton for the bdgFindMetapeaks command
+Author: OpenAI ChatGPT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# FindMetapeaks
+
+This is a **minimal installable Python package skeleton** that exposes a command-line tool:
+
+```bash
+bdgFindMetapeaks [parameters]
+```
+
+## Install locally
+
+From inside the unzipped `FindMetapeaks` directory:
+
+```bash
+pip install .
+```
+
+Or for editable/development mode:
+
+```bash
+pip install -e .
+```
+
+## Test the installed command
+
+```bash
+bdgFindMetapeaks --help
+```
+
+## Example usage
+
+```bash
+bdgFindMetapeaks \
+  --input example.bedgraph \
+  --output peaks.bed \
+  --cutoff 5 \
+  --min-length 150 \
+  --max-gap 50
+```
+
+## Notes
+
+- The current implementation is a **starter skeleton**.
+- It parses arguments and writes a simple placeholder output file.
+- You can now replace the placeholder processing code with your real FindMetapeaks algorithm.
+
+## Project layout
+
+```text
+FindMetapeaks/
+  pyproject.toml
+  README.md
+  src/
+    findmetapeaks/
+      __init__.py
+      bdgFindMetapeaks.py
+```
