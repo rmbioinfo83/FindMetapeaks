@@ -275,3 +275,7 @@ which bdgFindMetapeaks
 ### WSL build or install fails under `/mnt/c/...`
 
 If you are using WSL, copy the repository into the Linux filesystem (for example `~/FindMetapeaks`) and install it there instead of building from a mounted Windows path.
+
+### WSL runs very slowly on FindMetapeaks
+
+**WSL note:** On Windows Subsystem for Linux (WSL), run FindMetapeaks from the Linux filesystem (for example `~/FindMetapeaks`) rather than a mounted Windows path such as `/mnt/c/...`, since running from `/mnt/c/...` can be much slower and may also cause package build or file-permission issues.
