@@ -1,0 +1,35 @@
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python build/package artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+findmetapeaks_test_env/
+
+# Editor/OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# FindMetapeaks generated outputs
+bdg_bedGraphs/
+bdg_metapeaks/
+bdg_count_matrices/
+*_bedcat.bed
+*_bedcat.sorted.bed
+*.bedGraph
+
+# Logs/temp
+*.log
+*.tmp
